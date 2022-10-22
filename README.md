@@ -3,6 +3,7 @@
 
 1. Rasa installieren (siehe https://github.com/michaeleggers/RasaIntro)
 
+2. im Terminal folgende Befehle ausführen:
 ```
 git clone https://github.com/ID-Start-Winter22/einfacherChatbot.git
 ```
@@ -19,10 +20,10 @@ rasa train
 rasa run --cors "*" --debug
 ```
 
-in einem zweiten Terminal:
+3. in einem zweiten Terminal:
 
 ```
 python -m http.server
-``
+```
 
 im Browser http://localhost:8000/
