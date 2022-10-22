@@ -35,3 +35,9 @@ stories:
   - intent: my_name_is
   - action: utter_greet_with_name
 
+- story: greet_with_name2
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: utter_greet_with_name
