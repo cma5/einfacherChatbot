@@ -26,4 +26,4 @@ rasa run --cors "*" --debug
 python -m http.server
 ```
 
-im Browser http://localhost:8000/
+4. im Browser http://localhost:8000/
