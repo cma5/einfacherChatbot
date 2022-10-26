@@ -12,6 +12,7 @@ intents:
   - my_name_is
 
 actions:
+  - action_store_name
   - action_get_name
 
 entities:

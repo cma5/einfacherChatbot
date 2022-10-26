@@ -12,6 +12,22 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+
+
+
+class ActionStoreUserName(Action):
+
+     def name(self) -> Text:
+         return "action_store_name"
+
+
+     def run(self, dispatcher, tracker, domain):
+        username = tracker.get_slot("username")
+        sender_ids = tracker.keys()
+        print(sender_ids)
+
+        return []
+
 class ActionUserName(Action):
 
      def name(self) -> Text:
@@ -26,3 +42,4 @@ class ActionUserName(Action):
 
 
         return []
+
