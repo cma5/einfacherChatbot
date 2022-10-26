@@ -41,3 +41,21 @@ stories:
   - action: utter_greet_ask_name
   - intent: my_name_is
   - action: utter_greet_with_name
+
+- story: greet_with_name_and_action
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: utter_greet_with_name
+  - intent: wer_bin_ich
+  - action: action_get_name
+
+- story: name_and_action
+  steps:
+  - intent: greet_formal
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: utter_greet_with_name
+  - intent: wer_bin_ich
+  - action: action_get_name

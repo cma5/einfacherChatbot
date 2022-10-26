@@ -123,4 +123,18 @@ nlu:
     - Ich bin der [Horst](username)
     - [Hans](username)
 
+- intent: wer_bin_ich
+  examples: |
+    - Wer bin ich?
+    - Hast Du Dir meinen Namen gemerkt?
+    - Wie heiße ich?
+    - Weißt Du wer ich bin?
+    - Wie lautet mein Name?
 
+- regex: username
+  examples: |
+    - ^([ \u00c0-\u01ffa-zA-Z'\-])+$
+    - Gudrun
+    - Tina
+    - Hans
+    - Horst

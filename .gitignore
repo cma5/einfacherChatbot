@@ -8,9 +8,11 @@ results/*
 **/__pycache__/*
 **/.config/*
 **/.keras/*
+*.pyc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+__pycache__/*
 *.py[cod]
 *$py.class
 

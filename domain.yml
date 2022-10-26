@@ -10,6 +10,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - my_name_is
+  - wer_bin_ich
 
 actions:
   - action_get_name
