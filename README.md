@@ -25,10 +25,10 @@ rasa run --cors "*" --debug
 rasa run actions
 ```
 
-4. in einem dritten Terminal:
+4. (optional in einem dritten Terminal:)
 
 ```
 python -m http.server
 ```
 
-5. im Browser http://localhost:8000/
+5. im Browser http://localhost:8000/ oder im Browser [./index.html](./index.html) öffnen
