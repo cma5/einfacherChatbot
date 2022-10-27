@@ -123,4 +123,10 @@ nlu:
     - Ich bin der [Horst](username)
     - [Hans](username)
 
+- intent: bot_challenge_name
+  examples: |
+    - Wer bin ich?
+    - Wie heisse ich?
+    - Erinnerst du dich an meinen Namen?
+
 

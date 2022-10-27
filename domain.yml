@@ -10,8 +10,10 @@ intents:
   - mood_unhappy
   - bot_challenge
   - my_name_is
-
+  - bot_challenge_name
+  
 actions:
+  - action_store_name
   - action_get_name
 
 entities:
