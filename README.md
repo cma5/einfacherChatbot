@@ -19,11 +19,16 @@ rasa train
 ```
 rasa run --cors "*" --debug
 ```
-
 3. in einem zweiten Terminal:
+
+```
+rasa run actions
+```
+
+4. in einem dritten Terminal:
 
 ```
 python -m http.server
 ```
 
-4. im Browser http://localhost:8000/
+5. im Browser http://localhost:8000/
