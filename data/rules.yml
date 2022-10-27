@@ -10,3 +10,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Ask the bot if it remembers user's name
+  steps:
+  - intent: bot_challenge_name
+  - action: action_get_name
