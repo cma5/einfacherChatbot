@@ -116,12 +116,16 @@ nlu:
 
 - regex: username
   examples: |
-    - \d{10,12}
+    - \b[a-z]{1,24}
 
 - intent: my_name_is
   examples: |
-    - Ich heisse [1234567891](username)
-    - Mein Name ist [1234567891](username)
+    - Ich heisse [abcdefghijklmnopqrstuvwxyz](username)
+    - Ich bin [abcdefghijklmnopqrstuvwxyz](username)
+    - Man nennt mich [abcdefghijklmnopqrstuvwxyz](username)
+    - Mein Name ist [abcdefghijklmnopqrstuvwxyz](username)
+    - Meine Freunde nennen mich [abcdefghijklmnopqrstuvwxyz](username)
+    - [abcdefghijklmnopqrstuvwxyz](username)
 
 
 - intent: bot_challenge_name
@@ -129,5 +133,10 @@ nlu:
     - Wer bin ich?
     - Wie heisse ich?
     - Erinnerst du dich an meinen Namen?
+    - Weisst du noch wie ich heisse?
+    - Kannst du dich an meinen Namen erinnern?
+    - Habe ich dir schon gesagt wie ich heisse?
+    - Kennst du meinen Namen schon?
+    - Haben wir uns schon einander vorgestellt?
 
 
