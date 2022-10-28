@@ -32,3 +32,14 @@ python -m http.server
 ```
 
 5. im Browser http://localhost:8000/ oder im Browser [./index.html](./index.html) öffnen
+
+# MacOS (M1/2)
+Falls die obigen Befehle so nicht funktionieren, ein
+```
+python -m
+```
+davorstellen, also zB:
+```
+python -m rasa train
+```
+
