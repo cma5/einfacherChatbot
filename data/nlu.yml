@@ -122,6 +122,7 @@ nlu:
     - Mein Name ist [Anna](username)
     - Ich bin der [Horst](username)
     - [Hans](username)
+    - Meine Freunde nennen mich Michael
 
 - intent: bot_challenge_name
   examples: |
