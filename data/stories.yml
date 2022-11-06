@@ -48,3 +48,10 @@ stories:
   steps:
   - intent: bot_challenge_name
   - action: action_get_name
+
+- story: do_the_action
+  steps:
+  - intent: greet
+  - action: action_print_bahndata
+  - intent: get_bahninfo
+  - action: utter_greet_with_name

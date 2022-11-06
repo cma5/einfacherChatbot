@@ -12,6 +12,7 @@ from pyparsing import nestedExpr
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import requests
 
 
 # NOTE(Michael): We could use this action to store the name in
@@ -43,4 +44,13 @@ class ActionUserName(Action):
             dispatcher.utter_message(' Du bist {}'.format(username))
 
         return []
+
+class ActionPrintBahnData(Action):
+
+    def name(self) -> Text:
+        return "action_print_bahndata"
+
+    def run(self, dispatcher, tracker, domain):
+        bahndata = requests.get('https://google.com/')
+        dispatcher.utter_message('Die Antwort lautet {}'.format(bahndata))
 

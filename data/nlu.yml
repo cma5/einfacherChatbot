@@ -7,7 +7,7 @@ nlu:
     - hello
     - hi
     - hello there
-    - good morning
+    - good momir rning
     - good evening
     - moin
     - hey there
@@ -129,5 +129,13 @@ nlu:
     - Wer bin ich?
     - Wie heisse ich?
     - Erinnerst du dich an meinen Namen?
+
+- intent: get_bahninfo
+  examples: |
+    - Wie heißt der Zug?
+    - Welcher Zug?
+    - Nenne mir den Namen des Zuges.
+    - Zug?
+
 
 

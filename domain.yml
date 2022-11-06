@@ -11,13 +11,16 @@ intents:
   - bot_challenge
   - my_name_is
   - bot_challenge_name
+  - get_bahninfo
   
 actions:
   - action_store_name
   - action_get_name
+  - action_print_bahndata
 
 entities:
   - username
+  - bahndata
 
 slots:
   username:
@@ -54,6 +57,9 @@ responses:
 
   utter_greet_with_name:
   - text: "Hey, {username}. Alles klar?"
+
+  utter_do_the_action:
+  - text: "Die Antwort lautet: {bahndata}!"
 
 session_config:
   session_expiration_time: 60
