@@ -50,7 +50,22 @@ class ActionPrintBahnData(Action):
     def name(self) -> Text:
         return "action_print_bahndata"
 
+
     def run(self, dispatcher, tracker, domain):
+        """def get_train_details(train_number: int) -> dict:
+            url = f"https://bahn.expert/api/hafas/v2/details/{train_number}"
+            res = requests.get(url)
+
+            departure = res["departure"]
+            platform = departure["platform"]
+            scheduled_time = departure["scheduledTime"]
+            time = departure["time"]
+            delay = departure["delay"]
+            # print(platform, scheduled_time, time, delay)
+            
+            return res.json()"""
+        #bahndata = get_train_details(8000105)
         bahndata = requests.get('https://google.com/')
         dispatcher.utter_message('Die Antwort lautet {}'.format(bahndata))
 
+        return []
